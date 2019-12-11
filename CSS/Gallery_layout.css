@@ -1,0 +1,41 @@
+/*MOBILE*/@media only screen and (min-width:307px) and (max-width:600px){
+
+    /*Fonts*/
+
+    @import  url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+    @font-face {
+        font-family: 'Vision-Heavy';
+        src: url('FONTS/Vision-Heavy.otf');
+    }
+
+    @keyframes slide {
+        0% {left:100%; width:100%}
+        5% {left:0%;}
+        
+    }
+    html, body {
+        width:100%;
+        height:100%;
+        padding:0px;
+        margin:0px;
+    }
+
+    div.slider {
+        display:block;
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        position:absolute;
+    }
+
+    div.slide {
+        display:block;
+        width:100%;
+        height:100%;
+        position:absolute;
+        animation:slide 12s infinite;
+        overflow:hidden;
+    }
+
+}
