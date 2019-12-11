@@ -1,7 +1,6 @@
-/*MOBILE*/@media only screen and (min-width:307px) and (max-width:600px){
 
-    /*Fonts*/
-
+/*MOBILE*/@media only screen and (min-width:307px) and (max-width:600px)
+{
     @import  url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
     @font-face {
@@ -9,130 +8,96 @@
         src: url('FONTS/Vision-Heavy.otf');
     }
 
-    /*HTML Styles */
-
-    html {
-        background-color:rgba(68, 68, 68, 0.075);
-        scroll-behavior:smooth;
+    .grid-container
+    {
+    grid-template-columns: 4fr;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 0;
+    display: grid;
+    overflow-wrap: normal;
+    
+    }
+    .box
+    {
+    display: flexbox;
+    text-decoration:none;
     }
 
-    /*Body Styles*/
 
-    body {
-        height: 100vh;
-        position: relative;
-        margin: 0 auto 0 auto;
+    
+    /* Grid Rows and Columns */
+
+    a {
+        text-decoration-color:rgb(255, 153, 0);
+        color:rgb(255, 153, 0);
     }
 
-    body::after {
-        display: flexbox;
-        content: "";
-        clear: both;
+    h2 {
+        font-size:26px;
+        font-family:'Open Sans', sans-serif;
+        text-align:center;
+        letter-spacing:1px;
+        color:rgb(61, 61, 61);
     }
     
-    .container {
-        width:517.5px;
-        height:267px;
-        display:flexbox;
-        padding:0px 0px 0px 5px;
+    .picture {
+        grid-column: 1 / 5;
+        grid-row: 1;
+        text-align: center;
+        background-image: url("../IMGS/1.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 15% 0;
+        color: white
+    }
+    
+    .nav
+    {
+    grid-column: 1 / 5;
+    grid-row: 2;
+    font-size:2.3rem;
+    text-align:center;
+    display:flexbox;
+    }
+    .nav ul {
+        text-decoration: none;
+        list-style-type: none;
+        display: flex;
+        justify-content: space-evenly;
     }
 
-    /*Grid Styles*/
+     h1 {
+         font-family:'Open Sans', sans-serif;
+     }
 
-    .grid-container {
-        grid-template-columns: 4fr;
-        grid-template-rows: 1fr;
-        grid-gap: 0;
-        display: flexbox;
-        overflow-wrap: normal;
-        height: 267px;
-    }
+     .footer img {
+         width:190px;
+         height:46px;
+     }
 
-    .box {
-        display: flexbox;
-        text-decoration:none;  
-    }
-
-    .header {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        z-index: 5;
-        background-color:rgb(254, 254, 255);
-        width: 100%;
-        height: 100%;
-        color:#f2f2f2;
-        top:10px;
-        display:flexbox;
-    }
-
-    .nav {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 5;
-        grid-row-end: 6;
-        background-color:rgb(36, 35, 35);
-        width: auto;
-        height: auto;
+    .scroll2top {
+        position:absolute;
+        padding:.4.5rem;
         text-decoration:none;
-        font-size:2.3rem;
-        text-align:center;
+        left:50rem;
+        bottom:10px;
         display:flexbox;
+        
     }
+    /*MAKES IT LOOK LIKE I USED SOME FANCY PSEUDO CLASS TO MAKE THE ICON FOR THE ANCHOR TO THE TOP APPEAR :)*/
+    
 
-    .hero {
-        grid-column-start: 1;
-        grid-column-end:2;
-        grid-row-start: 4;
-        grid-row-end: 5;
-        background-color:rgb(14, 31, 54);
-    }
-
-    .main {
+    .main{
         grid-column-start: 1;
         grid-column-end:2;
         grid-row-start: 7;
         grid-row-end: 8;
         background-color:#ffffffbd;
         display:flexbox;
-        margin:1rem;
         color:#353535;
         box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.075);
-    }
         
-    .footer {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 8;
-        grid-row-end: 11;
-        background-color: #353535;
-        color:#ffffff;
-        display:flexbox;
-    }
-
-    /*Image Styles*/
-    
-    .portfolioimgsl {
-        width:12em;
-        height:8em;
-        margin-left: 1.7em;
-        margin-bottom:1.4em;
-        margin-top:1em;
-    }
-
-    .portfolioimgsr {
-        width:12em;
-        height:8em;
-        margin-top: 1em;
-        margin-left:1.8em;
-        margin-bottom:1.4em;
-    }
-
-    .footer img {
-        width:190px;
-        height:46px;
-    }
+        }
 
     .footer > a > img {
         padding:10px 0px 10px 0px;
@@ -140,26 +105,34 @@
         height:50px;
         border-radius:20px;
     }
-   
 
-   .hero > img {
-       object-fit:cover;
-       width:100%;
-       height:100%;
+    
+    
+    /* Body Styles */
+    html
+    {
+    background-color:rgba(68, 68, 68, 0.075);
+    scroll-behavior:smooth;
     }
-
-    /*Link Styles*/
-
-    a {
-        color:rgb(255, 153, 0);
+    body
+    {
+    height: 100vh;
+    position: relative;
+    margin: 0 auto
     }
-
-    nav.nav > a {
-        flex:1;
-        flex-basis:100%;
+    body::after
+    {
+    display: flexbox;
+    content: "";
+    clear: both;
     }
-
-    /*Text Link Styles*/
+    
+    .container {
+    width:517.5px;
+    height:267px;
+    display:flexbox;
+    padding:0px 0px 0px 5px;
+    }
 
     .nav > a:hover {
         background-color:#f7941d;
@@ -178,40 +151,6 @@
         letter-spacing:1px;
         display:flexbox;
         padding:0px 36px 0px 36px;
-    }
-
-    a p {
-        font-size:40px;
-        font-family:'Open Sans', sans-serif;
-        text-align:center;
-        color:rgb(124, 124, 124);
-        flex: 1 1 307;
-        margin:20px;
-    }
-
-    a p:active {
-        box-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.301);
-        background-color:rgb(233, 233, 233);
-        text-decoration:none;
-        color:white;
-        text-shadow; 
-    }
-
-    /*Text Styles*/
-    
-    h1 {
-        font-family:'Open Sans', sans-serif;
-        padding:5px 0px 0px 30px;
-        flex: 1 1 307;
-    }
-
-    h2 {
-        font-size:26px;
-        font-family:'Open Sans', sans-serif;
-        text-align:center;
-        letter-spacing:1px;
-        color:rgb(61, 61, 61);
-        flex: 1 1 307;
     }
 
     h3 {
@@ -235,31 +174,22 @@
         letter-spacing:10px;
         background:linear-gradient(rgb(255, 157, 0), rgb(255, 145, 0));
         color:rgb(255, 255, 255);
-    }
 
-    .footh2 {
-        font-size:26px;
-        font-family:'Open Sans', sans-serif;
-        text-align:left;
-        padding-left:30px;
-        letter-spacing:1px;
-        color:rgb(202, 202, 202);
-        flex: 1 1 307;
-    }
-
-    .footh3 {
-        font-size:20px;
-        font-family:'Open Sans', sans-serif;
-        text-align:left;
-        padding-left:30px;
-        color:rgb(129, 129, 129);
-        flex: 1 1 307;
     } 
 }
 
-/*TABLET*/@media only screen and (min-width:601px) and (max-width:1024px){
 
-}
+/*TABLET*/@media only screen and (min-width:601px) and (max-width:1024px){}
 
-/*DESKTOP*/@media only screen and (min-width:1025px){
-}
+/*DESKTOP*/@media only screen and (min-width:1025px){}
+
+
+
+
+
+
+
+
+
+
+
