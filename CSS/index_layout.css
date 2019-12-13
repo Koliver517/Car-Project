@@ -7,6 +7,7 @@
         font-family: 'Vision-Heavy';
         src: url('FONTS/Vision-Heavy.otf');
     }
+    
 
     .grid-container
     {
@@ -15,6 +16,7 @@
     grid-gap: 0;
     display: grid;
     overflow-wrap: normal;
+    
     
     }
     .box
@@ -96,26 +98,116 @@
          height:46px;
      }
 
-    .scroll2top {
-        position:absolute;
-        padding:.4.5rem;
-        text-decoration:none;
-        left:50rem;
-        bottom:10px;
-        display:flexbox;
-        
-    }
-    /*MAKES IT LOOK LIKE I USED SOME FANCY PSEUDO CLASS TO MAKE THE ICON FOR THE ANCHOR TO THE TOP APPEAR :)*/
-    
-
     .main{
         grid-column: 1 / 5;
         grid-row: 3;
         background-color:#ffffffbd;
         color:#353535;
         box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.075);
-        
-        }
+    }
+    .main h2 {
+        padding: 10px 0;
+        font-size: 350%;
+    }
+    .content {
+        display: flex;
+        justify-content: space-around;
+        font-size: 150%;
+        flex-wrap: wrap;
+        height: 4000px;
+    }
+    .first {
+        flex: 0 0 90%
+    }
+    .second {
+        flex: 0 0 50%
+    }
+    .third {
+        flex: 0 0 50%
+    }
+    .fourth {
+        flex: 0 0 90%
+    }
+    .dropdown {
+        margin:0;
+        background:#333;
+        color:#eee;
+        position:relative;
+        border: 0;
+        border-radius: 10px 10px 0 0;
+        height: 100px;
+    }
+    label{
+        position:relative;
+        display:block;
+        padding: 0 24px 0 12px;
+        line-height:3em;
+        transition: background 0.3s;
+        cursor:pointer;
+        font-size: 150%;
+        text-align: center;
+        right:5px;
+    }
+    label:after{
+        content:"";
+        position:absolute;
+        display:block;
+        top:50%;
+        right:5px;
+        width:0;
+        height:0;
+        border-top:4px solid rgba(255,255,255,.5);
+        border-bottom:0 solid rgba(255,255,255,.5);
+        border-left:4px solid transparent;
+        border-right:4px solid transparent;
+        transition:border-bottom .1s, border-top .1s .1s;
+    }
+
+    input:checked ~ label:after{
+        border-top:0 solid rgba(255,255,255,.5);
+        border-bottom:4px solid rgba(255,255,255,.5);
+        transition:border-top .1s, border-bottom .1s .1s;
+    }
+
+    /*hide the inputs*/
+    input{display:none}
+
+    input:checked ~ .submenu1{
+        max-height: 1500px;
+        transition:max-height 0.5s ease-in;
+    }
+
+    input:checked ~ .submenu{
+        max-height: 300px;
+        transition:max-height 0.5s ease-in;
+    }
+
+    /*style for the second level menu*/
+    ul.submenu, .submenu1{
+        max-height:0;
+        padding:0;
+        overflow:hidden;
+        list-style-type:none;
+        background:#444;
+        box-shadow:0 0 1px rgba(0,0,0,.3);
+        transition:max-height 0.5s ease-out;
+        position:absolute;
+        min-width:100%;
+        margin-top: 0;
+    }
+    ul.submenu li, ul.submenu1 li {
+            font-size: 125%;
+            padding: 10px
+    }
+
+    ul.submenu li a, ul.submenu1 li a{
+        display:block;
+        padding:12px;
+        color:#ddd;
+        text-decoration:none;
+        box-shadow:0 -1px rgba(0,0,0,.5) inset;
+        transition:background .3s;
+    }
 
     .footer > a > img {
         padding:10px 0px 10px 0px;
