@@ -1,5 +1,5 @@
 
-/*MOBILE*/@media only screen and (min-width:307px) and (max-width:1000px) and (orientation: portrait){
+/*MOBILE*/@media only screen and (min-width:307px) and (max-width:992px) and (orientation: portrait) {
 
     /*Fonts*/
     @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Girassol|IM+Fell+English+SC|Just+Another+Hand|Kelly+Slab|Permanent+Marker&display=swap');
@@ -125,6 +125,7 @@
         height: 1400px;
         background: rgb(87,87,87);
         background: linear-gradient(180deg, rgba(87,87,87,1) 0%, rgba(30,32,33,1) 45%, rgba(30,32,33,1) 55%, rgba(87,87,87,1) 100%);
+        font-family: 'IM Fell English SC', serif;
     }
     .first {
         flex: 0 0 100%
@@ -297,9 +298,11 @@
 }
 
 
-/*TABLET*/@media only screen and (min-width:601px) and (max-width:1024px){}
-
-/*DESKTOP*/@media only screen and (min-width:1025px){
+/*TABLET*/@media only screen and (min-width:993px) and (max-width:1199px) (orientation: portrait) {
+    html {
+        background: rgb(87,87,87);
+        background: linear-gradient(90deg, rgba(87,87,87,1) 0%, rgba(30,32,33,1) 45%, rgba(30,32,33,1) 55%, rgba(87,87,87,1) 100%);
+    }
     .grid-container
     {
     grid-template-columns: 4fr;
@@ -340,6 +343,7 @@
         color: white;
         z-index: 5;
         background-color: black;
+        user-select: none;
     }
 
     .picturetext {
@@ -360,6 +364,7 @@
         left:250px;
         font-size:50px;
         font-family: 'Bungee Inline', cursive;
+        user-select: none;
     }
     
     .nav {
@@ -431,8 +436,11 @@
         font-size: 100%;
         flex-wrap: wrap;
         height: 250px;
-        width: 94%;
-        margin: 0 auto;
+        width: 100%;
+        margin: 0;
+        padding: 2% 0; 
+        background: rgb(87,87,87);
+        background: linear-gradient(90deg, rgba(87,87,87,1) 0%, rgba(30,32,33,1) 45%, rgba(30,32,33,1) 55%, rgba(87,87,87,1) 100%);
     }
     .first {
         flex: 0 0 35%
@@ -448,12 +456,12 @@
     }
     .dropdown {
         margin:0;
-        background:#333;
         color:#eee;
         position:relative;
-        border: 0;
+        border: 2px solid white;
         border-radius: 10px 10px 0 0;
         height: 100px;
+        font-family: 'IM Fell English SC', serif;
     }
     label{
         position:relative;
@@ -477,7 +485,7 @@
         border-bottom:0 solid rgba(255,255,255,.5);
         border-left:4px solid transparent;
         border-right:4px solid transparent;
-        transition:border-bottom .1s, border-top .1s .1s;
+        transition: border-bottom .1s, border-top .1s .1s;
     }
 
     input:checked ~ label:after{
@@ -518,13 +526,335 @@
         box-shadow:0 0 1px rgba(0,0,0,.3);
         transition:max-height 0.5s ease-out;
         position:absolute;
-        width: 121.5%;
+        width: 121.85%;
         margin-top: 0;
         top: 100%;
         z-index: 6;
     }
+    ul.left {
+        left: -2px
+    }
     ul.right {
-        right: 0%
+        right: -2px
+    }
+    ul.submenu1 li p {
+        font-size: 150%;
+        padding: 10px;
+        text-indent: 20px;
+        margin: 0
+    }
+    ul.submenu table {
+        font-size: 150%;
+    }
+    ul.submenu table td {
+        padding: 5px 0;
+    }
+    ul.submenu a, ul.submenu1 a {
+        font-size: 75%;
+    }
+
+    ul.submenu li a, ul.submenu1 li a{
+        display:block;
+        padding:12px;
+        color:#ddd;
+        text-decoration:none;
+        box-shadow:0 -1px rgba(0,0,0,.5) inset;
+        transition:background .3s;
+    }
+    
+    /* Main Details */
+    .submenu table {
+        padding: 20px
+    }
+
+    
+    
+    /* Body Styles */
+    html
+    {
+    background-color:rgba(68, 68, 68, 0.075);
+    scroll-behavior:smooth;
+    }
+    body
+    {
+    height: 100vh;
+    position: relative;
+    margin: 0 auto
+    }
+    body::after
+    {
+    display: flexbox;
+    content: "";
+    clear: both;
+    }
+    
+
+    .nav > a:hover {
+        background-color:#f7941d;
+        text-shadow:1.5px 0px 1px rgba(255, 255, 255, 0.952);
+        color:#4d2c03;
+        display:flexbox;
+        padding:0px 36px 0px 36px;
+    }
+
+    .nav > a {
+        text-decoration:none;
+        border-radius: 0px 20px 0px 20px;
+        color:#f0f0f0;
+        font-family:'Vision-Heavy';
+        font-style:bold;
+        letter-spacing:1px;
+        display:flexbox;
+        padding:0px 36px 0px 36px;
+    }
+
+    h3 {
+        font-size:25px;
+        font-family:'Open Sans', sans-serif;
+        text-align:center;
+        color:rgb(97, 97, 97);
+        flex: 1 1 307;
+    }
+}
+
+/*DESKTOP*/@media only screen and (min-width:1200px){
+    html {
+        background: rgb(87,87,87);
+        background: linear-gradient(90deg, rgba(87,87,87,1) 0%, rgba(30,32,33,1) 45%, rgba(30,32,33,1) 55%, rgba(87,87,87,1) 100%);
+    }
+    .grid-container
+    {
+    grid-template-columns: 4fr;
+    grid-template-rows: auto auto;
+    grid-gap: 0;
+    display: grid;
+    overflow-wrap: normal;
+    
+    
+    }
+    
+    /* Grid Rows and Columns */
+
+    a {
+        color:rgb(255, 153, 0);
+        font-family: 'Permanent Marker', cursive;
+        font-size:40px;
+    }
+
+    h2 {
+        font-size:26px;
+        font-family:'Open Sans', sans-serif;
+        text-align:center;
+        letter-spacing:1px;
+        color:rgb(61, 61, 61);
+    }
+    
+    .picture {
+        grid-column: 1 / 5;
+        grid-row: 1;
+        text-align: center;
+        font-size: 300%;
+        background-image: url("../IMGS/2.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 10% 0 10%;
+        color: white;
+        z-index: 5;
+        background-color: black;
+        user-select: none;
+    }
+
+    .picturetext {
+        position:absolute;
+        color:rgb(255, 244, 91);
+        top:300px;
+        z-index:10;
+        left:250px;
+        font-size:50px;
+        font-family: 'Bungee Inline', cursive;
+    }
+
+    .picturetext2 {
+        position:absolute;
+        color:rgb(255, 170, 91);
+        top:310px;
+        z-index:10;
+        left:250px;
+        font-size:50px;
+        font-family: 'Bungee Inline', cursive;
+        user-select: none;
+    }
+    
+    .nav {
+        position: absolute;
+        font-size:2rem;
+        z-index: 7;
+        width: 100%;
+    }
+    .nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0
+    }
+    .nav li {
+        transform: perspective(100px) rotateX(-20deg);
+        display: block;
+        background-color: rgba(157, 159, 167, 0.863);
+        padding: 10px;
+        width: 20%;
+        text-align: center;
+        border: 0;
+        border-radius: 0 0 10px 10px;
+        user-select: none;
+    }
+    .nav li:hover {
+        background-color: rgb(109, 110, 117);
+    }
+    .nav li a {
+        text-decoration: none;
+        color: white;
+        user-select: none;
+        
+    }
+
+     h1 {
+        font-family: 'Bungee Inline', cursive;
+     }
+
+    .main{
+        grid-column: 1 / 5;
+        grid-row: 2;
+        background-color:#ffffffbd;
+        color:#353535;
+        box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.075);
+    }
+    .overview {
+        margin: 20px 10%;
+        padding: 20px 50px;
+        background-color: rgb(82, 82, 82);
+        border: 2px solid black;
+        border-radius: 5%;
+    }
+    .overview h3 {
+        font-size: 400%;
+        color: black;
+        margin: 0
+    }
+    .overview p {
+        font-size: 200%;
+        color: white;
+        margin-top: 0;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-around;
+        font-size: 100%;
+        flex-wrap: wrap;
+        height: 250px;
+        width: 100%;
+        margin: 0;
+        padding: 2% 0; 
+        background: rgb(87,87,87);
+        background: linear-gradient(90deg, rgba(87,87,87,1) 0%, rgba(30,32,33,1) 45%, rgba(30,32,33,1) 55%, rgba(87,87,87,1) 100%);
+    }
+    .first {
+        flex: 0 0 35%
+    }
+    .second {
+        flex: 0 0 35%
+    }
+    .third {
+        flex: 0 0 35%
+    }
+    .fourth {
+        flex: 0 0 35%
+    }
+    .dropdown {
+        margin:0;
+        color:#eee;
+        position:relative;
+        border: 2px solid white;
+        border-radius: 10px 10px 0 0;
+        height: 100px;
+        font-family: 'IM Fell English SC', serif;
+    }
+    label{
+        position:relative;
+        display:block;
+        padding: 0 24px 0 12px;
+        line-height: 3em;
+        transition: background 0.3s;
+        cursor:pointer;
+        font-size: 200%;
+        text-align: center;
+    }
+    label:after{
+        content:"";
+        position:absolute;
+        display:block;
+        top:50%;
+        right:5px;
+        width:0;
+        height:0;
+        border-top:4px solid rgba(255,255,255,.5);
+        border-bottom:0 solid rgba(255,255,255,.5);
+        border-left:4px solid transparent;
+        border-right:4px solid transparent;
+        transition: border-bottom .1s, border-top .1s .1s;
+    }
+
+    input:checked ~ label:after{
+        border-top:0 solid rgba(255,255,255,.5);
+        border-bottom:4px solid rgba(255,255,255,.5);
+        transition:border-top .1s, border-bottom .1s .1s;
+    }
+
+    /*hide the inputs*/
+    input{display:none}
+
+    input:checked ~ .submenu1{
+        max-height: 2000px;
+        transition:max-height 0.5s ease-in;
+    }
+
+    input:checked ~ .submenu{
+        max-height: 1100px;
+        transition:max-height 0.5s ease-in;
+    }
+    @keyframes move {
+        from {height:250px}
+        to {height:1300px}
+    }
+    @keyframes back {
+        from {height:1300px}
+        to {height:250px}
+    }
+    
+
+    /*style for the second level menu*/
+    ul.submenu, .submenu1{
+        max-height:0;
+        padding:0;
+        overflow:hidden;
+        list-style-type:none;
+        background:#444;
+        box-shadow:0 0 1px rgba(0,0,0,.3);
+        transition:max-height 0.5s ease-out;
+        position:absolute;
+        width: 121.85%;
+        margin-top: 0;
+        top: 100%;
+        z-index: 6;
+    }
+    ul.left {
+        left: -2px
+    }
+    ul.right {
+        right: -2px
     }
     ul.submenu1 li p {
         font-size: 150%;
