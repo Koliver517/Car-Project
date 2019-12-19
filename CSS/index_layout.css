@@ -1,7 +1,5 @@
 
-/*MOBILE*/@media only screen and (min-width: 400px) and (max-width:992px) and (orientation: portrait)
-{
-    @import  url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/*MOBILE*/@media only screen and (min-width:307px) and (max-width:600px){
 
     /*Fonts*/
     @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Girassol|IM+Fell+English+SC|Just+Another+Hand|Kelly+Slab|Permanent+Marker&display=swap');
@@ -34,8 +32,9 @@
 
     h2 {
         font-size:26px;
-        font-family: 'Permanent Marker', cursive;
+        font-family:'Open Sans', sans-serif;
         text-align:center;
+        letter-spacing:1px;
         color:rgb(61, 61, 61);
     }
     
@@ -83,12 +82,11 @@
         text-decoration: none;
         color: black;
         user-select: none;
-        font-family: 'Permanent Marker', cursive;
         
     }
 
      h1 {
-         font-family: 'Permanent Marker', cursive;
+         font-family:'Open Sans', sans-serif;
      }
 
     .main{
@@ -314,8 +312,9 @@
     /* Grid Rows and Columns */
 
     a {
-        text-decoration-color:rgb(255, 153, 0);
         color:rgb(255, 153, 0);
+        font-family: 'Permanent Marker', cursive;
+        font-size:40px;
     }
 
     h2 {
@@ -340,6 +339,26 @@
         z-index: 5;
         background-color: black;
     }
+
+    .picturetext {
+        position:absolute;
+        color:rgb(255, 244, 91);
+        top:340px;
+        z-index:10;
+        left:250px;
+        font-size:50px;
+        font-family: 'Bungee Inline', cursive;
+    }
+
+    .picturetext2 {
+        position:absolute;
+        color:rgb(255, 170, 91);
+        top:350px;
+        z-index:10;
+        left:250px;
+        font-size:50px;
+        font-family: 'Bungee Inline', cursive;
+    }
     
     .nav {
         position: absolute;
@@ -357,7 +376,7 @@
     .nav li {
         transform: perspective(100px) rotateX(-20deg);
         display: block;
-        background-color: orange;
+        background-color: rgba(157, 159, 167, 0.863);
         padding: 10px;
         width: 20%;
         text-align: center;
@@ -366,17 +385,17 @@
         user-select: none;
     }
     .nav li:hover {
-        background-color: rgb(207, 135, 0);
+        background-color: rgb(109, 110, 117);
     }
     .nav li a {
         text-decoration: none;
-        color: black;
+        color: white;
         user-select: none;
         
     }
 
      h1 {
-         font-family:'Open Sans', sans-serif;
+        font-family: 'Bungee Inline', cursive;
      }
 
     .main{
@@ -411,7 +430,7 @@
         flex-wrap: wrap;
         height: 250px;
         width: 94%;
-        margin: 0 auto
+        margin: 0 auto;
     }
     .first {
         flex: 0 0 35%

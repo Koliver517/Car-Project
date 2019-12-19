@@ -1,6 +1,17 @@
 
 /*MOBILE*/@media only screen and (min-width: 400px) and (max-width:992px) and (orientation: portrait)
 {
+    /*Fonts*/
+    @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Girassol|IM+Fell+English+SC|Just+Another+Hand|Kelly+Slab|Permanent+Marker&display=swap');
+    /*Library
+    font-family: 'Bungee Inline', cursive;
+    font-family: 'Girassol', cursive;
+    font-family: 'IM Fell English SC', serif;
+    font-family: 'Just Another Hand', cursive;
+    font-family: 'Kelly Slab', cursive;
+    font-family: 'Permanent Marker', cursive;
+    */
+
     .grid-container
     {
     grid-template-rows: auto auto;
@@ -14,7 +25,7 @@
     /* Grid Rows and Columns */
 
     a {
-        text-decoration-color:rgb(255, 153, 0);
+        text-decoration-color:rgb(255, 219, 164);
         color:rgb(255, 153, 0);
     }
     
@@ -36,6 +47,7 @@
         font-size:2.3rem;
         z-index: 7;
         width: 100%;
+        font-family: 'Permanent Marker', cursive;
     }
     .nav ul {
         list-style-type: none;
@@ -96,6 +108,7 @@
     .first {
         grid-column: 1;
         grid-row: 2;
+        font-family: 'Permanent Marker', cursive;
     }
     .second {
         grid-column: 1;
