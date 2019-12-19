@@ -1,5 +1,5 @@
 
-/*MOBILE*/@media only screen and (min-width:307px) and (max-width:600px){
+/*MOBILE*/@media only screen and (min-width:307px) and (max-width:1000px) and (orientation: portrait){
 
     /*Fonts*/
     @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Girassol|IM+Fell+English+SC|Just+Another+Hand|Kelly+Slab|Permanent+Marker&display=swap');
@@ -123,6 +123,8 @@
         font-size: 150%;
         flex-wrap: wrap;
         height: 1400px;
+        background: rgb(87,87,87);
+        background: linear-gradient(180deg, rgba(87,87,87,1) 0%, rgba(30,32,33,1) 45%, rgba(30,32,33,1) 55%, rgba(87,87,87,1) 100%);
     }
     .first {
         flex: 0 0 100%
@@ -343,7 +345,7 @@
     .picturetext {
         position:absolute;
         color:rgb(255, 244, 91);
-        top:340px;
+        top:300px;
         z-index:10;
         left:250px;
         font-size:50px;
@@ -353,7 +355,7 @@
     .picturetext2 {
         position:absolute;
         color:rgb(255, 170, 91);
-        top:350px;
+        top:310px;
         z-index:10;
         left:250px;
         font-size:50px;
