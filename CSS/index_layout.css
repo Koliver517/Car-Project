@@ -474,10 +474,10 @@
     }
     @keyframes move {
         from {height:250px}
-        to {height:2000px}
+        to {height:1300px}
     }
     @keyframes back {
-        from {height:2000px}
+        from {height:1300px}
         to {height:250px}
     }
     

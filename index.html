@@ -9,10 +9,10 @@
                 var content = document.getElementById("content")
 
                 if (checkbox.checked == true) {
-                    content.style.animation = "move 1s"
+                    content.style.animation = "move 1s forwards"
                 }
                 else {
-                    content.style.animation = "back .5s"
+                    content.style.animation = "back 1s"
                 }
             }
             
@@ -27,15 +27,10 @@
         <ul>
             <li><a href="index.html">Info</a></li>
             <li><a href="Gallery.html">Gallery</a></li>
-            <li>Fun Facts</li>
+            <li><a href="FunFacts.html">Fun Facts</a></li>
         </ul>
     </div>
     <div class="main">
-        <div class="overview">
-            <h3>Overview</h3>
-            <p>1967 Chevrolet Impala. 283 midi mouse engine rebuilt a year ago Just got on the road this year has been sitting since 2011 Currently registered Swivel seats in the front This Impala has a custom interior The paint job is sophisticated beyond its years Sure to catch every ones attention The spark plugs and wires and distributor cap have all been changed out She will start for you on the first turn AM FM Power Steering. Located in Chico CA. Financing Nationwide Shipping And Warranties Available To Qualified Buyers This vehicle is located in: Chico, CA Stock Number: C191000L4
-            </p>
-        </div>
         <div class="content" id="content">
             <div class="first dropdown">
                 <input id="check01" type="checkbox" name="menu" onclick="history()">

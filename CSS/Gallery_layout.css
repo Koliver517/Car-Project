@@ -18,19 +18,40 @@ html {
     width:400px;
 }
 
+
 .nav {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 6;
-    background-color:rgb(61, 61, 61);
-    height: 50px;
-    text-decoration:none;
+    position: absolute;
     font-size:1rem;
-    position:absolute;
-    text-align:center;
-    display:flexbox;
-    width:490px;
+    z-index: 7;
+    width: 100%;
+    top: 0
+}
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0
+}
+.nav li {
+    transform: perspective(100px) rotateX(-20deg);
+    display: block;
+    background-color: orange;
+    padding: 10px;
+    width: 20%;
+    text-align: center;
+    border: 0;
+    border-radius: 0 0 10px 10px;
+    user-select: none;
+}
+.nav li:hover {
+    background-color: rgb(207, 135, 0);
+}
+.nav a {
+    text-decoration: none;
+    color: black;
+    user-select: none;
+    
 }
 
 .main {
