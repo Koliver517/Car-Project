@@ -1,5 +1,13 @@
 
+<<<<<<< HEAD
 /*MOBILE*/@media only screen and (min-width:307px) and (max-width:992px) and (orientation: portrait) {
+=======
+<<<<<<< Updated upstream
+/*MOBILE*/@media only screen and (min-width:307px) and (max-width:1000px) and (orientation: portrait){
+=======
+/*MOBILE*/@media only screen and (min-width:307px) and (max-width:900px){
+>>>>>>> Stashed changes
+>>>>>>> master
 
     /*Fonts*/
     @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Girassol|IM+Fell+English+SC|Just+Another+Hand|Kelly+Slab|Permanent+Marker&display=swap');
@@ -351,7 +359,7 @@
         color:rgb(255, 244, 91);
         top:300px;
         z-index:10;
-        left:250px;
+        left:220px;
         font-size:50px;
         font-family: 'Bungee Inline', cursive;
     }
@@ -361,7 +369,7 @@
         color:rgb(255, 170, 91);
         top:310px;
         z-index:10;
-        left:250px;
+        left:220px;
         font-size:50px;
         font-family: 'Bungee Inline', cursive;
         user-select: none;
