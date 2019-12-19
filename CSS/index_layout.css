@@ -3,11 +3,16 @@
 {
     @import  url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-    @font-face {
-        font-family: 'Vision-Heavy';
-        src: url('FONTS/Vision-Heavy.otf');
-    }
-    
+    /*Fonts*/
+    @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Girassol|IM+Fell+English+SC|Just+Another+Hand|Kelly+Slab|Permanent+Marker&display=swap');
+    /*Library
+    font-family: 'Bungee Inline', cursive;
+    font-family: 'Girassol', cursive;
+    font-family: 'IM Fell English SC', serif;
+    font-family: 'Just Another Hand', cursive;
+    font-family: 'Kelly Slab', cursive;
+    font-family: 'Permanent Marker', cursive;
+    */
 
     .grid-container
     {
@@ -29,9 +34,8 @@
 
     h2 {
         font-size:26px;
-        font-family:'Open Sans', sans-serif;
+        font-family: 'Permanent Marker', cursive;
         text-align:center;
-        letter-spacing:1px;
         color:rgb(61, 61, 61);
     }
     
@@ -79,11 +83,12 @@
         text-decoration: none;
         color: black;
         user-select: none;
+        font-family: 'Permanent Marker', cursive;
         
     }
 
      h1 {
-         font-family:'Open Sans', sans-serif;
+         font-family: 'Permanent Marker', cursive;
      }
 
     .main{
