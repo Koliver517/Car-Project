@@ -41,6 +41,26 @@
         color: white;
         z-index: 5;
     }
+
+    .picturetext {
+        position:absolute;
+        color:rgb(255, 244, 91);
+        top:200px;
+        z-index:10;
+        left:180px;
+        font-size:30px;
+        font-family: 'Bungee Inline', cursive;
+    }
+
+    .picturetext2 {
+        position:absolute;
+        color:rgb(255, 170, 91);
+        top:210px;
+        z-index:10;
+        left:180px;
+        font-size:30px;
+        font-family: 'Bungee Inline', cursive;
+    }
     
     .nav {
         position: absolute;
@@ -59,7 +79,7 @@
     .nav li {
         transform: perspective(100px) rotateX(-20deg);
         display: block;
-        background-color: orange;
+        background-color:rgba(157, 159, 167, 0.863);
         padding: 10px;
         width: 20%;
         text-align: center;
@@ -68,11 +88,11 @@
         user-select: none;
     }
     .nav li:hover {
-        background-color: rgb(207, 135, 0);
+        background-color: rgb(109, 110, 117);
     }
     .nav li a {
         text-decoration: none;
-        color: black;
+        color: #f0f0f0;
         user-select: none;
         
     }
@@ -84,8 +104,8 @@
     .main{
         grid-column: 1 / 5;
         grid-row: 2;
-        background-color:#ffffffbd;
-        color:#353535;
+        background: linear-gradient(180deg, rgba(87,87,87,1) 0%, rgba(30,32,33,1) 45%, rgba(30,32,33,1) 55%, rgba(87,87,87,1) 100%);
+        color:lightgray;
         box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.075);
         display: grid;
         grid-template-columns: auto;
@@ -95,8 +115,7 @@
         text-align: center;
     }
     .box {
-        background: lightgray;
-        border: 2px solid black;
+        border: 2px solid lightgray;
         border-radius: 10%;
     }
     .header {
@@ -108,7 +127,6 @@
     .first {
         grid-column: 1;
         grid-row: 2;
-        font-family: 'Permanent Marker', cursive;
     }
     .second {
         grid-column: 1;
@@ -167,9 +185,181 @@
 }
 
 
-/*TABLET*/@media only screen and (min-width:601px) and (max-width:1024px){}
+/*TABLET*/@media only screen and (min-width:601px) and (max-width:1024px){
+    /*Fonts*/
+    @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Girassol|IM+Fell+English+SC|Just+Another+Hand|Kelly+Slab|Permanent+Marker&display=swap');
+    /*Library
+    font-family: 'Bungee Inline', cursive;
+    font-family: 'Girassol', cursive;
+    font-family: 'IM Fell English SC', serif;
+    font-family: 'Just Another Hand', cursive;
+    font-family: 'Kelly Slab', cursive;
+    font-family: 'Permanent Marker', cursive;
+    */
+
+    .grid-container
+    {
+    grid-template-rows: auto auto;
+    grid-gap: 0;
+    display: grid;
+    overflow-wrap: normal;
+    
+    
+    }
+    
+    /* Grid Rows and Columns */
+
+    a {
+        text-decoration-color:rgb(255, 219, 164);
+        color:rgb(255, 153, 0);
+    }
+    
+    .picture {
+        grid-column: 1 / 5;
+        grid-row: 1;
+        text-align: center;
+        font-size: 300%;
+        background-image: url("../IMGS/1.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 20% 0 0%;
+        color: white;
+        z-index: 5;
+    }
+    
+    .nav {
+        position: absolute;
+        font-size:2.3rem;
+        z-index: 7;
+        width: 100%;
+        font-family: 'Permanent Marker', cursive;
+    }
+    .nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0
+    }
+    .nav li {
+        transform: perspective(100px) rotateX(-20deg);
+        display: block;
+        background-color:rgba(157, 159, 167, 0.863);
+        padding: 10px;
+        width: 20%;
+        text-align: center;
+        border: 0;
+        border-radius: 0 0 10px 10px;
+        user-select: none;
+    }
+    .nav li:hover {
+        background-color: rgb(109, 110, 117);
+    }
+    .nav li a {
+        text-decoration: none;
+        color: #f0f0f0;
+        user-select: none;
+        
+    }
+
+     h1 {
+         font-family:'Open Sans', sans-serif;
+     }
+
+    .main{
+        grid-column: 1 / 5;
+        grid-row: 2;
+        background: linear-gradient(180deg, rgba(87,87,87,1) 0%, rgba(30,32,33,1) 45%, rgba(30,32,33,1) 55%, rgba(87,87,87,1) 100%);
+        color:lightgray;
+        box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.075);
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-gap: 10px;
+        font-size: 300%;
+        text-align: center;
+    }
+    .box {
+        border: 2px solid lightgray;
+        border-radius: 10%;
+    }
+    .header {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 200%;
+        
+    }
+    .first {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .second {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .third {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .fourth {
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+
+    
+    
+    /* Body Styles */
+    html
+    {
+    background-color:rgba(68, 68, 68, 0.075);
+    scroll-behavior:smooth;
+    }
+    body
+    {
+    height: 100vh;
+    position: relative;
+    margin: 0 auto
+    }
+    body::after
+    {
+    display: flexbox;
+    content: "";
+    clear: both;
+    }
+    
+
+    .nav > a:hover {
+        background-color:#f7941d;
+        text-shadow:1.5px 0px 1px rgba(255, 255, 255, 0.952);
+        color:#4d2c03;
+        display:flexbox;
+        padding:0px 36px 0px 36px;
+    }
+
+    .nav > a {
+        text-decoration:none;
+        border-radius: 0px 20px 0px 20px;
+        color:#f0f0f0;
+        font-family:'Vision-Heavy';
+        font-style:bold;
+        letter-spacing:1px;
+        display:flexbox;
+        padding:0px 36px 0px 36px;
+    }
+}
 
 /*DESKTOP*/@media only screen and (min-width:1025px){
+    /*Fonts*/
+    @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Girassol|IM+Fell+English+SC|Just+Another+Hand|Kelly+Slab|Permanent+Marker&display=swap');
+    /*Library
+    font-family: 'Bungee Inline', cursive;
+    font-family: 'Girassol', cursive;
+    font-family: 'IM Fell English SC', serif;
+    font-family: 'Just Another Hand', cursive;
+    font-family: 'Kelly Slab', cursive;
+    font-family: 'Permanent Marker', cursive;
+    */
     .grid-container
     {
     grid-template-rows: auto auto;
@@ -207,7 +397,7 @@
         color:rgb(255, 244, 91);
         top:250px;
         z-index:10;
-        left:310px;
+        left:220px;
         font-size:50px;
         font-family: 'Bungee Inline', cursive;
     }
@@ -217,7 +407,7 @@
         color:rgb(255, 170, 91);
         top:260px;
         z-index:10;
-        left:310px;
+        left:220px;
         font-size:50px;
         font-family: 'Bungee Inline', cursive;
     }
@@ -275,6 +465,7 @@
         font-size: 100%;
         text-align: center;
         padding: 2% 2%;
+        font-family: 'IM Fell English SC', serif;
         background: rgb(87,87,87);
         background: linear-gradient(90deg, rgba(87,87,87,1) 0%, rgba(30,32,33,1) 45%, rgba(30,32,33,1) 55%, rgba(87,87,87,1) 100%);
     }
@@ -283,7 +474,7 @@
         border-radius: 10px;
         padding: 5px;
         font-size: 125%;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'IM Fell English SC', serif;
     }
     .header {
         grid-column: 2 / 4;

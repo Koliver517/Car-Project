@@ -1,4 +1,5 @@
 
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 /*MOBILE*/@media only screen and (min-width:307px) and (max-width:992px) and (orientation: portrait) {
 =======
@@ -9,6 +10,9 @@
 >>>>>>> Stashed changes
 >>>>>>> master
 
+=======
+/*MOBILE*/@media only screen and (min-width:307px) and (max-width:1000px) and (orientation: portrait){
+>>>>>>> Stashed changes
     /*Fonts*/
     @import url('https://fonts.googleapis.com/css?family=Bungee+Inline|Girassol|IM+Fell+English+SC|Just+Another+Hand|Kelly+Slab|Permanent+Marker&display=swap');
     /*Library
